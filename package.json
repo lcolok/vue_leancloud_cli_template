@@ -1,71 +1,74 @@
 {
-  "name": "vue_leancloud_cli_template",
-  "version": "0.0.1",
-  "private": true,
-  "description": "A sample Node.js app using Express,with powerful Vue CLI",
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "dev": "nodemon server.js -- ",
-    "start": "node server.js"
-  },
-  "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "connect-timeout": "^1.7.0",
-    "cookie-parser": "^1.3.5",
-    "ejs": "^2.7.1",
-    "express": "^4.17.1",
-    "leancloud-storage": "^3.15.0",
-    "vue": "^2.6.10",
-    "vue-router": "^3.1.3",
-    "vuetify": "^2.1.0",
-    "vuex": "^3.1.1"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.12.0",
-    "@vue/cli-plugin-eslint": "^3.12.0",
-    "@vue/cli-plugin-pwa": "^3.12.0",
-    "@vue/cli-service": "^3.12.0",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.2.3",
-    "leanengine": "^3.4.0",
-    "nodemon": "^1.19.3",
-    "sass": "^1.17.4",
-    "sass-loader": "^7.1.0",
-    "stylus": "^0.54.7",
-    "stylus-loader": "^3.0.1",
-    "vue-cli-plugin-vuetify": "^1.0.1",
-    "vue-template-compiler": "^2.6.10",
-    "vuetify-loader": "^1.2.2"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "engines": {
-    "node": "10.x"
-  }
+	"name": "vue_leancloud_cli_template",
+	"version": "0.0.1",
+	"private": true,
+	"description": "A sample Node.js app using Express,with powerful Vue CLI",
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build",
+		"prettier": "onchange '@(@(**/*|*).@(js|jsx|json|scss|md|vue|html))' -e '@(config/**/*.js|node_modules|src/components/lottie/json/**/*.json)' -- prettier --write {{changed}}",
+		"lint": "vue-cli-service lint",
+		"dev": "nodemon server.js -- ",
+		"start": "node server.js"
+	},
+	"main": "server.js",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"connect-timeout": "^1.7.0",
+		"cookie-parser": "^1.3.5",
+		"ejs": "^2.7.1",
+		"express": "^4.17.1",
+		"leancloud-storage": "^3.15.0",
+		"vue": "^2.6.10",
+		"vue-router": "^3.1.3",
+		"vuetify": "^2.1.0",
+		"vuex": "^3.1.1",
+		"leanengine": "^3.4.0"
+	},
+	"devDependencies": {
+		"@vue/cli-plugin-babel": "^3.12.0",
+		"@vue/cli-plugin-eslint": "^3.12.0",
+		"@vue/cli-plugin-pwa": "^3.12.0",
+		"@vue/cli-service": "^3.12.0",
+		"babel-eslint": "^10.0.3",
+		"eslint": "^5.16.0",
+		"eslint-plugin-vue": "^5.2.3",
+		"nodemon": "^1.19.3",
+		"onchange": "^6.1.0",
+		"prettier": "^1.18.2",
+		"sass": "^1.17.4",
+		"sass-loader": "^7.1.0",
+		"stylus": "^0.54.7",
+		"stylus-loader": "^3.0.1",
+		"vue-cli-plugin-vuetify": "^1.0.1",
+		"vue-template-compiler": "^2.6.10",
+		"vuetify-loader": "^1.2.2"
+	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"node": true
+		},
+		"extends": [
+			"plugin:vue/essential",
+			"eslint:recommended"
+		],
+		"rules": {},
+		"parserOptions": {
+			"parser": "babel-eslint"
+		}
+	},
+	"postcss": {
+		"plugins": {
+			"autoprefixer": {}
+		}
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not ie <= 8"
+	],
+	"engines": {
+		"node": "10.x"
+	}
 }
